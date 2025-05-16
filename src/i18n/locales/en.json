@@ -1,0 +1,77 @@
+{
+  "common": {
+    "appName": "AreebEvents",
+    "events": "Events",
+    "admin": "Admin",
+    "login": "Login",
+    "signup": "Sign Up",
+    "logout": "Logout",
+    "myBookings": "My Bookings"
+  },
+  "home": {
+    "title": "Find Your Perfect Event",
+    "subtitle": "Discover and book the best events happening around you. From tech conferences to music festivals, we've got you covered.",
+    "description": "Discover and join the best events around you.",
+    "searchPlaceholder": "Search events...",
+    "allCategories": "All Categories",
+    "createEvent": "Create New Event",
+    "upcomingEvents": "Upcoming Events",
+    "noEventsFound": "No events found",
+    "tryAdjusting": "Try adjusting your search or filters to find what you're looking for."
+  },
+  "auth": {
+    "welcomeBack": "Welcome Back",
+    "loginDesc": "Log in to access your account",
+    "email": "Email",
+    "password": "Password",
+    "loggingIn": "Logging in...",
+    "dontHaveAccount": "Don't have an account?",
+    "signUp": "Sign up",
+    "createAccount": "Create an Account",
+    "signUpDesc": "Sign up to book and manage events",
+    "name": "Name",
+    "creatingAccount": "Creating account...",
+    "alreadyHaveAccount": "Already have an account?",
+    "loginSuccess": "Successfully logged in!",
+    "passwordReset": "Password reset functionality coming soon."
+  },
+  "event": {
+    "bookNow": "Book Now",
+    "alreadyBooked": "Already Booked",
+    "processing": "Processing...",
+    "pleaseLogin": "Please log in to book this event",
+    "about": "About this event",
+    "venue": "Venue",
+    "dateTime": "Date and time",
+    "eventDetails": "Event Details:",
+    "price": "Price"
+  },
+  "booking": {
+    "confirmed": "Booking Confirmed!",
+    "reserved": "Your spot for {{eventName}} has been reserved.",
+    "event": "Event:",
+    "date": "Date:",
+    "viewBookings": "View My Bookings",
+    "exploreMore": "Explore More Events",
+    "myBookings": "My Bookings",
+    "manage": "Manage all your upcoming event bookings",
+    "noBookings": "No bookings yet",
+    "noBookingsDesc": "You haven't booked any events yet. Explore our events and book your first one!",
+    "browseEvents": "Browse Events"
+  },
+  "footer": {
+    "description": "Your one-stop platform for discovering, booking, and managing events.",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "categories": "Categories",
+    "conferences": "Conferences",
+    "music": "Music",
+    "business": "Business",
+    "technology": "Technology",
+    "contact": "Contact",
+    "contactDesc": "Have questions or need help?",
+    "email": "Email us at: mtlt278@gmail.com",
+    "whatsapp": "WhatsApp: 01080058959",
+    "copyright": "© 2025 AreebEvents. All rights reserved."
+  }
+}
