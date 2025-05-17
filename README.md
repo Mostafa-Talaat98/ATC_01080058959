@@ -65,7 +65,7 @@ npm start
 ```
 - The frontend will run on `http://localhost:3000`
 - Make sure API calls in the frontend point to `http://localhost:5000/api/...`
-
+- Admin role :- User :- admin@example.com ,  Pass:- password 
 ---
 
 ## 🔗 API Endpoints (Backend)
