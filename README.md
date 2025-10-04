@@ -1,100 +1,123 @@
-Here is an English README template for the vCard personal portfolio project, styled similarly to the AreebEvents README:
+AreebEvents - Event Management Platform
+AreebEvents هو نظام متكامل لإدارة الأحداث والفعاليات، يسمح للمستخدمين باكتشاف، وحجز، وإدارة الأحداث بسهولة. الواجهة الأمامية مبنية بريأكت، والباك اند باستخدام Node.js وExpress مع تخزين البيانات في ملفات JSON محليًا.
 
-***
+المتطلبات
+قبل البدء، يجب التأكد من توفر ما يلي:
 
-# vCard - Personal Portfolio
+Node.js وnpm مثبتين على الجهاز.
 
-vCard is a fully responsive personal portfolio website, optimized for all device sizes, built using HTML, CSS, and JavaScript.
+Git مثبت على نظام التشغيل.
 
-***
+تنصيب AreebEvents
+لتثبيت المشروع، اتبع الخطوات التالية:
 
-## 🚀 Project Overview
+bash
+git clone https://github.com/your-username/AreebEvents.git
+cd AreebEvents
+نظرة عامة على المشروع
+الفرونت اند: تطبيق React حديث يتضمن تسجيل دخول، تصفح الأحداث، والحجز، مع إدارة متكاملة للأدمن.
 
-- **Frontend:** A static single-page application showcasing your personal information, skills, projects, and social links.
-- **Design:** Responsive layout with light/dark mode and customizable color themes.
+الباك اند: REST API باستخدام Express, Node.js مع تخزين البيانات محليًا في ملفات JSON.
 
-***
+المزايا
+تسجيل مستخدمين ودخول آمن
 
-## ✨ Features
+تصفح، بحث، وتصفية الأحداث
 
-- Clean and professional design
-- Light/Dark mode toggle
-- Personal info, skills, projects, and contact sections
-- Easy customization by editing HTML and CSS files
-- No backend or database required
+إمكانية حجز وإدارة الحجوزات
 
-***
+لوحة تحكم للأدمن لإدارة الأحداث
 
-## 🛠️ Tech Stack
+تصميم متجاوب مع دعم الوضع الليلي/النهاري
 
-- HTML
-- CSS
-- JavaScript
+لا حاجة لإعداد قاعدة بيانات (التخزين محلي)
 
-***
+التقنيات المستخدمة
+الفرونت اند: React, React Router, Context API, TailwindCSS, React Testing Library, Jest
 
-## 📁 Folder Structure
+الباك اند: Node.js, Express, CORS, body-parser
 
-```
-vCard/
-├── assets/
-│   ├── css/
-│   └── images/
-├── js/
-│   └── main.js
-├── index.html
+التخزين: ملفات JSON (users.json, events.json)
+
+هيكلية المجلدات
+text
+AreebEvents/
+├── backend/
+│   ├── server.js
+│   ├── users.json
+│   └── events.json
+├── src/
+│   ├── components/
+│   ├── contexts/
+│   ├── pages/
+│   ├── App.tsx
+│   └── ...
+├── public/
+├── package.json
 └── README.md
-```
+بدء الاستخدام
+1. إعداد الباك اند
+bash
+cd backend
+npm install
+node server.js
+يعمل السيرفر على http://localhost:5000
 
-***
+البيانات محفوظة في users.json و events.json
 
-## ⚡ Getting Started
+2. إعداد الفرونت اند
+bash
+npm install
+npm start
+الفرونت اند يعمل على http://localhost:3000
 
-### Installation
+تأكد أن طلبات الـ API موجهة إلى http://localhost:5000/api/...
 
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-cd vcard-personal-portfolio
-```
+بيانات دخول الأدمن الافتراضي
+User: admin@example.com
 
-### Running the Website Locally
+Pass: password
 
-- Open the `index.html` file in your preferred web browser.
+واجهات الـ API (الباك اند)
+POST /api/register — تسجيل مستخدم جديد
 
-***
+POST /api/login — تسجيل الدخول
 
-## 👤 Customization
+GET /api/events — جميع الأحداث
 
-- Edit the `index.html` file to update your personal details, projects, and social links.
-- Modify the CSS files in `assets/css/` to change colors and styles to your liking.
+POST /api/events — إضافة حدث جديد
 
-***
+PUT /api/events/:id — تعديل حدث
 
-## 🧪 Testing
+DELETE /api/events/:id — حذف حدث
 
-- No automated tests available.
-- Test responsiveness manually across different devices and browsers.
+أدوار المستخدمين
+User: تسجيل، دخول، تصفح، حجز فعاليات
 
-***
+Admin: إضافة/تعديل/حذف الأحداث (بيانات الدخول بالأعلى)
 
-## 🤝 Contribution
+الاختبارات
+تم كتابة اختبارات وحدات باستخدام React Testing Library وJest
 
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature/your-feature`).
-3. Commit your changes (`git commit -am 'Add new feature'`).
-4. Push the branch (`git push origin feature/your-feature`).
-5. Open a Pull Request.
+للتشغيل:
 
-***
+bash
+npm test
+المساهمة في المشروع
+اعمل fork للريبو
 
+أنشئ فرع جديد لميزتك (git checkout -b feature/your-feature)
 
+نفذ التغييرات (git commit -am 'Add new feature')
 
-[1](https://github.com/codewithsadee/vcard-personal-portfolio)
-[2](https://my-v-profile.netlify.app)
-[3](https://www.github-zh.com/projects/471780567-vcard-personal-portfolio)
-[4](https://www.behance.net/search/projects/vcard%20personal)
-[5](https://github.com/codingstella/vCard-personal-portfolio)
-[6](https://codesandbox.io/s/codingstella-vcard-personal-portfolio-d328fw)
-[7](https://www.behance.net/search/projects/vcard%20template)
-[8](https://www.youtube.com/watch?v=75lvh1NmyeA)
-[9](https://ivanr3d.com/vcard/index.html?lang=en)
+ادفع الفرع (git push origin feature/your-feature)
+
+افتح Pull Request
+
+التواصل
+Email: mtlt278@gmail.com
+
+WhatsApp: 01080058959
+
+استمتع باستخدام AreebEvents! 🎉
+
