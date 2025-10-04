@@ -1,111 +1,100 @@
-# AreebEvents
+Here is an English README template for the vCard personal portfolio project, styled similarly to the AreebEvents README:
 
-AreebEvents is a full-stack event management platform that allows users to discover, book, and manage events. The project is built with a React frontend and a Node.js + Express backend using local JSON files for data storage (local storage on the server).
+***
 
----
+# vCard - Personal Portfolio
+
+vCard is a fully responsive personal portfolio website, optimized for all device sizes, built using HTML, CSS, and JavaScript.
+
+***
 
 ## 🚀 Project Overview
-- **Frontend:** Modern React app with authentication, event browsing, booking, and admin management.
-- **Backend:** Node.js + Express REST API, storing users and events in local JSON files (no database required).
 
----
+- **Frontend:** A static single-page application showcasing your personal information, skills, projects, and social links.
+- **Design:** Responsive layout with light/dark mode and customizable color themes.
+
+***
 
 ## ✨ Features
-- User registration and login
-- Browse, search, and filter events
-- Book events and manage your bookings
-- Admin can create, edit, and delete events
-- Responsive design with light/dark mode
-- Local storage backend (no DB setup needed)
 
----
+- Clean and professional design
+- Light/Dark mode toggle
+- Personal info, skills, projects, and contact sections
+- Easy customization by editing HTML and CSS files
+- No backend or database required
+
+***
 
 ## 🛠️ Tech Stack
-- **Frontend:** React, React Router, Context API, TailwindCSS, React Testing Library, Jest
-- **Backend:** Node.js, Express, CORS, body-parser
-- **Storage:** JSON files (`users.json`, `events.json`)
 
----
+- HTML
+- CSS
+- JavaScript
+
+***
 
 ## 📁 Folder Structure
+
 ```
-AreebEvents/
-├── backend/
-│   ├── server.js
-│   ├── users.json
-│   └── events.json
-├── src/
-│   ├── components/
-│   ├── contexts/
-│   ├── pages/
-│   ├── App.tsx
-│   └── ...
-├── public/
-├── package.json
+vCard/
+├── assets/
+│   ├── css/
+│   └── images/
+├── js/
+│   └── main.js
+├── index.html
 └── README.md
 ```
 
----
+***
 
 ## ⚡ Getting Started
 
-### 1. Backend Setup
+### Installation
+
 ```bash
-cd backend
-npm install
-node server.js
+git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
+cd vcard-personal-portfolio
 ```
-- The backend will run on `http://localhost:5000`
-- Data is stored in `users.json` and `events.json` in the backend folder.
 
-### 2. Frontend Setup
-```bash
-npm install
-npm start
-```
-- The frontend will run on `http://localhost:3000`
-- Make sure API calls in the frontend point to `http://localhost:5000/api/...`
-- Admin role :- User :- admin@example.com ,  Pass:- password 
----
+### Running the Website Locally
 
-## 🔗 API Endpoints (Backend)
-- `POST   /api/register`   — Register a new user
-- `POST   /api/login`      — Login user
-- `GET    /api/events`     — Get all events
-- `POST   /api/events`     — Add new event
-- `PUT    /api/events/:id` — Update event
-- `DELETE /api/events/:id` — Delete event
+- Open the `index.html` file in your preferred web browser.
 
----
+***
 
-## 👤 User Roles
-- **User:** Can register, login, browse, and book events
-- **Admin:** Can create, edit, and delete events (use `admin@example.com` / `password` by default)
+## 👤 Customization
 
----
+- Edit the `index.html` file to update your personal details, projects, and social links.
+- Modify the CSS files in `assets/css/` to change colors and styles to your liking.
+
+***
 
 ## 🧪 Testing
-- Unit tests are written using React Testing Library and Jest
-- To run tests:
-```bash
-npm test
-```
 
----
+- No automated tests available.
+- Test responsiveness manually across different devices and browsers.
+
+***
 
 ## 🤝 Contribution
-1. Fork the repo
-2. Create your feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Open a Pull Request
 
----
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push the branch (`git push origin feature/your-feature`).
+5. Open a Pull Request.
 
-## 📞 Contact
-- Email: mtlt278@gmail.com
-- WhatsApp: 01080058959
+***
 
----
 
-Enjoy using AreebEvents! 🎉
+
+[1](https://github.com/codewithsadee/vcard-personal-portfolio)
+[2](https://my-v-profile.netlify.app)
+[3](https://www.github-zh.com/projects/471780567-vcard-personal-portfolio)
+[4](https://www.behance.net/search/projects/vcard%20personal)
+[5](https://github.com/codingstella/vCard-personal-portfolio)
+[6](https://codesandbox.io/s/codingstella-vcard-personal-portfolio-d328fw)
+[7](https://www.behance.net/search/projects/vcard%20template)
+[8](https://www.youtube.com/watch?v=75lvh1NmyeA)
+[9](https://ivanr3d.com/vcard/index.html?lang=en)
