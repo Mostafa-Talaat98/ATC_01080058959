@@ -1,46 +1,34 @@
-AreebEvents - Event Management Platform
-AreebEvents هو نظام متكامل لإدارة الأحداث والفعاليات، يسمح للمستخدمين باكتشاف، وحجز، وإدارة الأحداث بسهولة. الواجهة الأمامية مبنية بريأكت، والباك اند باستخدام Node.js وExpress مع تخزين البيانات في ملفات JSON محليًا.
+# AreebEvents 
 
-المتطلبات
-قبل البدء، يجب التأكد من توفر ما يلي:
+AreebEvents is a full-stack event management platform that allows users to discover, book, and manage events. The project is built with a React frontend and a Node.js + Express backend using local JSON files for data storage (local storage on the server).
 
-Node.js وnpm مثبتين على الجهاز.
+---
 
-Git مثبت على نظام التشغيل.
+## 🚀 Project Overview
+- **Frontend:** Modern React app with authentication, event browsing, booking, and admin management.
+- **Backend:** Node.js + Express REST API, storing users and events in local JSON files (no database required).
 
-تنصيب AreebEvents
-لتثبيت المشروع، اتبع الخطوات التالية:
+---
 
-bash
-git clone https://github.com/your-username/AreebEvents.git
-cd AreebEvents
-نظرة عامة على المشروع
-الفرونت اند: تطبيق React حديث يتضمن تسجيل دخول، تصفح الأحداث، والحجز، مع إدارة متكاملة للأدمن.
+## ✨ Features
+- User registration and login
+- Browse, search, and filter events
+- Book events and manage your bookings
+- Admin can create, edit, and delete events
+- Responsive design with light/dark mode
+- Local storage backend (no DB setup needed)
 
-الباك اند: REST API باستخدام Express, Node.js مع تخزين البيانات محليًا في ملفات JSON.
+---
 
-المزايا
-تسجيل مستخدمين ودخول آمن
+## 🛠️ Tech Stack
+- **Frontend:** React, React Router, Context API, TailwindCSS, React Testing Library, Jest
+- **Backend:** Node.js, Express, CORS, body-parser
+- **Storage:** JSON files (`users.json`, `events.json`)
 
-تصفح، بحث، وتصفية الأحداث
+---
 
-إمكانية حجز وإدارة الحجوزات
-
-لوحة تحكم للأدمن لإدارة الأحداث
-
-تصميم متجاوب مع دعم الوضع الليلي/النهاري
-
-لا حاجة لإعداد قاعدة بيانات (التخزين محلي)
-
-التقنيات المستخدمة
-الفرونت اند: React, React Router, Context API, TailwindCSS, React Testing Library, Jest
-
-الباك اند: Node.js, Express, CORS, body-parser
-
-التخزين: ملفات JSON (users.json, events.json)
-
-هيكلية المجلدات
-text
+## 📁 Folder Structure
+```
 AreebEvents/
 ├── backend/
 │   ├── server.js
@@ -55,69 +43,67 @@ AreebEvents/
 ├── public/
 ├── package.json
 └── README.md
-بدء الاستخدام
-1. إعداد الباك اند
-bash
+```
+
+---
+
+## ⚡ Getting Started
+
+### 1. Backend Setup
+```bash
 cd backend
 npm install
 node server.js
-يعمل السيرفر على http://localhost:5000
+```
+- The backend will run on `http://localhost:5000`
+- Data is stored in `users.json` and `events.json` in the backend folder.
 
-البيانات محفوظة في users.json و events.json
-
-2. إعداد الفرونت اند
-bash
+### 2. Frontend Setup
+```bash
 npm install
 npm start
-الفرونت اند يعمل على http://localhost:3000
+```
+- The frontend will run on `http://localhost:3000`
+- Make sure API calls in the frontend point to `http://localhost:5000/api/...`
+- Admin role :- User :- admin@example.com ,  Pass:- password 
+---
 
-تأكد أن طلبات الـ API موجهة إلى http://localhost:5000/api/...
+## 🔗 API Endpoints (Backend)
+- `POST   /api/register`   — Register a new user
+- `POST   /api/login`      — Login user
+- `GET    /api/events`     — Get all events
+- `POST   /api/events`     — Add new event
+- `PUT    /api/events/:id` — Update event
+- `DELETE /api/events/:id` — Delete event
 
-بيانات دخول الأدمن الافتراضي
-User: admin@example.com
+---
 
-Pass: password
+## 👤 User Roles
+- **User:** Can register, login, browse, and book events
+- **Admin:** Can create, edit, and delete events (use `admin@example.com` / `password` by default)
 
-واجهات الـ API (الباك اند)
-POST /api/register — تسجيل مستخدم جديد
+---
 
-POST /api/login — تسجيل الدخول
-
-GET /api/events — جميع الأحداث
-
-POST /api/events — إضافة حدث جديد
-
-PUT /api/events/:id — تعديل حدث
-
-DELETE /api/events/:id — حذف حدث
-
-أدوار المستخدمين
-User: تسجيل، دخول، تصفح، حجز فعاليات
-
-Admin: إضافة/تعديل/حذف الأحداث (بيانات الدخول بالأعلى)
-
-الاختبارات
-تم كتابة اختبارات وحدات باستخدام React Testing Library وJest
-
-للتشغيل:
-
-bash
+## 🧪 Testing
+- Unit tests are written using React Testing Library and Jest
+- To run tests:
+```bash
 npm test
-المساهمة في المشروع
-اعمل fork للريبو
+```
 
-أنشئ فرع جديد لميزتك (git checkout -b feature/your-feature)
+---
 
-نفذ التغييرات (git commit -am 'Add new feature')
+## 🤝 Contribution
+1. Fork the repo
+2. Create your feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
 
-ادفع الفرع (git push origin feature/your-feature)
+---
 
-افتح Pull Request
+## 📞 Contact
+- Email: mtlt278@gmail.com
+- WhatsApp: 01080058959
 
-التواصل
-Email: mtlt278@gmail.com
-
-WhatsApp: 01080058959
-
-استمتع باستخدام AreebEvents! 🎉
-
+---
